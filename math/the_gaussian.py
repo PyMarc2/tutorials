@@ -33,23 +33,33 @@ from matplotlib import pyplot as plt
 class GaussianTutorial:
     def __init__(self, N):
         self.N = N
-        self.X1 = [1/N for i in range(1, N)]
-        self.X2 = [1/N for j in range(1, N)]
+        self.amountPicked = 0
+        self.X1 = [1/N for _ in range(1, N)]
+        self.X2 = [1/N for _ in range(1, N)]
         self.X3 = []
         self.fig, self.ax = plt.subplots()
 
-    def convolute_square(self):
+    def convolve_last_two(self):
         self.X3 = convolve(self.X1, self.X2)
         self.X1 = self.X3
         return self.X3
 
     def launch_sequence(self, n):
-        for i in range(1, n):
-            Y = self.convolute_square()
-            X = np.linspace(1, len(Y), len(Y))
-            self.ax.plot(X, Y)
+        for i in range(0, n):
+            self.amountPicked += 1
+            self.X2 = [1/(self.N-self.amountPicked) for _ in range(1, self.N-self.amountPicked)]
+            if i == 0:
+                X = np.linspace(1, len(self.X1), len(self.X1))
+                self.ax.plot(X, self.X1)
+            else:
+                Y = self.convolve_last_two()
+                X = np.linspace(1, len(Y), len(Y))
+                self.ax.plot(X, Y)  
+                print((len(Y)/2)/self.amountPicked)
         plt.show()
 
+
+
 gt = GaussianTutorial(20)
-gt.launch_sequence(3)
+gt.launch_sequence(18)
 

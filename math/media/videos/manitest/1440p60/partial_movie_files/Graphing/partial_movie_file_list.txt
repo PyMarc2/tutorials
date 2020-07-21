@@ -1,0 +1,5 @@
+file 'file:C:/Users/marc-/Documents/Github/PERSONNEL/tutorials/math/media/videos/manitest/1440p60/partial_movie_files/Graphing/00000.mp4'
+file 'file:C:/Users/marc-/Documents/Github/PERSONNEL/tutorials/math/media/videos/manitest/1440p60/partial_movie_files/Graphing/00001.mp4'
+file 'file:C:/Users/marc-/Documents/Github/PERSONNEL/tutorials/math/media/videos/manitest/1440p60/partial_movie_files/Graphing/00002.mp4'
+file 'file:C:/Users/marc-/Documents/Github/PERSONNEL/tutorials/math/media/videos/manitest/1440p60/partial_movie_files/Graphing/00003.mp4'
+file 'file:C:/Users/marc-/Documents/Github/PERSONNEL/tutorials/math/media/videos/manitest/1440p60/partial_movie_files/Graphing/00004.mp4'
