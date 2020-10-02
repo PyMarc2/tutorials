@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from general_plot import *
+from general_plot import general_plot
 from scipy.special import jn_zeros, kn
 
 ## Paramètres connus
